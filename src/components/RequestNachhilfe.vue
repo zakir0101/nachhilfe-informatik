@@ -3,7 +3,7 @@
 import {computed, ref} from "vue";
 import RequestList from "@/components/RequestList";
 import {ar_nachhilfe, de_nachhilfe, en_nachhilfe} from "@/texte";
-
+import {address} from "@/api";
 const sizeError = ref("")
 // const input_file = ref(null)
 const max_size = 10 * 1000 * 1000
@@ -26,7 +26,7 @@ function onCloseModal() {
   showModal.value = false
 }
 
-const current = ref(7);
+const current = ref(1);
 const page1Ref = ref(null);
 const page2Ref = ref(null);
 const page3Ref = ref(null);
@@ -104,7 +104,7 @@ function submit() {
     form_data.append('deadline', texte.value.page4.list[page4Active.value]);
 
   loading.value = true
-  fetch('http://127.0.0.1:5000/file', {
+  fetch(address+'file', {
     method: 'POST',
     mode: "cors",
     headers: {},

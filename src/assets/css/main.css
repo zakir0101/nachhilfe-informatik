@@ -44,6 +44,9 @@ html,body{
     color:white!important;
 }
 
+.mw-50{
+    min-width: 50%;
+}
 
 @media (min-width: 992px) {
     .w-lg-75 {
@@ -95,7 +98,9 @@ html,body{
     /*    box-sizing : border-box !important;*/
     /*}*/
 
-
+    .mw-md-25{
+        min-width: 25% !important;
+    }
     .display-md-7{
         font-size: 7rem !important;
     }

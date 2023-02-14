@@ -255,7 +255,14 @@ const de_contact = {
         email:"Email" , issue:"Anliegen",
         select : ["Regelmäßige Nachhilfe","Einmalige Nachhilfe" ,"eine Aufgabe erledigen"],
         msg:"Nachricht...",
-        button :"Nachricht schicken"
+        button :"Nachricht schicken",
+        warning:"einige pflichtfelder sind leer",
+        success:"deine Anfrage würde Erfolgreich gesendet. wir werden ihnen so bald wie möglich kontaktieren." +
+            " für schnellere Rückmeldung empfehlen wir jedoch WhatsApp",
+        error:"leider könnte deine Anfrage nicht geschickt werden . " +
+            "trotzdem können Sie uns jede zeit per WhatsApp erreichen",
+        modal :"deine Anfrage...",
+        spinner : "Nachricht senden"
     }
 }
 
@@ -273,7 +280,15 @@ const en_contact = {
         email:"Email" , issue:"issue",
         select : ["I need lessons regularly","I need a couple of lesson" ,"I want you to do some task for me"],
         msg:"Message...",
-        button :"Send message"
+        button :"Send message",
+        warning:"you have to fill the required field",
+        success:"your request was sent successfully. we will kontakt you as soon as possible." +
+            "we encourage you to text us per WhatsApp for even faster response",
+        error:"unfortunately your request could not be sent " +
+            "even though you can text us anytime per WhatsApp",
+        modal:"your request...",
+        spinner:"sending request"
+
     }
 }
 
